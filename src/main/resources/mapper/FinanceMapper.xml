@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.housekeeperispurchase.mapper.FinanceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.housekeeperispurchase.pojo.Finance">
+        <id column="financeId" property="financeId" />
+        <result column="financeType" property="financeType" />
+        <result column="incomeId" property="incomeId" />
+        <result column="financeBalance" property="financeBalance" />
+        <result column="financeNotes" property="financeNotes" />
+        <result column="financeTime" property="financeTime" />
+        <result column="financeName" property="financeName" />
+        <result column="financeUserId" property="financeUserId" />
+        <result column="financeImgs" property="financeImgs" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        financeId, financeType, incomeId, financeBalance, financeNotes, financeTime, financeName, financeUserId, financeImgs
+    </sql>
+
+</mapper>

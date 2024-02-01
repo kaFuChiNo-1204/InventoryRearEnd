@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.housekeeperispurchase.mapper.GoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.housekeeperispurchase.pojo.Goods">
+        <id column="goodsId" property="goodsId" />
+        <result column="goodsName" property="goodsName" />
+        <result column="goodsCode" property="goodsCode" />
+        <result column="goodsTime" property="goodsTime" />
+        <result column="goodsNumber" property="goodsNumber" />
+        <result column="goodsImgs" property="goodsImgs" />
+        <result column="goodsPushUserId" property="goodsPushUserId" />
+        <result column="goodsTypeOneId" property="goodsTypeOneId" />
+        <result column="goodsTypeTwoId" property="goodsTypeTwoId" />
+        <result column="goodsTypeThreeId" property="goodsTypeThreeId" />
+        <result column="goodsPushPrice" property="goodsPushPrice" />
+        <result column="goodsDuePrice" property="goodsDuePrice" />
+        <result column="goodsNotes" property="goodsNotes" />
+        <result column="additiveId" property="additiveId" />
+        <result column="goodsDisabled" property="goodsDisabled" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        goodsId, goodsName, goodsCode, goodsTime, goodsNumber, goodsImgs, goodsPushUserId, goodsTypeOneId, goodsTypeTwoId, goodsTypeThreeId, goodsPushPrice, goodsDuePrice, goodsNotes, additiveId, goodsDisabled
+    </sql>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.housekeeperispurchase.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.housekeeperispurchase.pojo.Order">
+        <id column="orderId" property="orderId" />
+        <result column="goodsId" property="goodsId" />
+        <result column="orderImgs" property="orderImgs" />
+        <result column="orderName" property="orderName" />
+        <result column="orderCode" property="orderCode" />
+        <result column="orderTypeOneId" property="orderTypeOneId" />
+        <result column="orderCostPrice" property="orderCostPrice" />
+        <result column="orderSellingPrice" property="orderSellingPrice" />
+        <result column="orderProfitPrice" property="orderProfitPrice" />
+        <result column="orderSalesUserId" property="orderSalesUserId" />
+        <result column="orderAdditivePrice" property="orderAdditivePrice" />
+        <result column="orderPushUserId" property="orderPushUserId" />
+        <result column="orderStaticId" property="orderStaticId" />
+        <result column="orderRecoupUserId" property="orderRecoupUserId" />
+        <result column="orderNotes" property="orderNotes" />
+        <result column="orderPushTime" property="orderPushTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        orderId, goodsId, orderImgs, orderName, orderCode, orderTypeOneId, orderCostPrice, orderSellingPrice, orderProfitPrice, orderSalesUserId, orderAdditivePrice, orderPushUserId, orderStaticId, orderRecoupUserId, orderNotes, orderPushTime
+    </sql>
+
+</mapper>

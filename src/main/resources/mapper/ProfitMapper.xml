@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.housekeeperispurchase.mapper.ProfitMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.housekeeperispurchase.pojo.Profit">
+        <id column="profitId" property="profitId" />
+        <result column="profitUserId" property="profitUserId" />
+        <result column="profitName" property="profitName" />
+        <result column="profitPrice" property="profitPrice" />
+        <result column="profitType" property="profitType" />
+        <result column="profitTime" property="profitTime" />
+        <result column="profitOutStanding" property="profitOutStanding" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        profitId, profitUserId, profitName, profitPrice, profitType, profitTime, profitOutStanding
+    </sql>
+
+</mapper>
